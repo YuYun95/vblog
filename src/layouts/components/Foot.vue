@@ -3,7 +3,7 @@
 		<el-row>
 			<el-col :span="10">
 				<div>
-					© 2020 jiailing&emsp;&emsp;
+					© 2020 YuYun&emsp;&emsp;
 					<a href="https://github.com/YuYun95" target="_blank">Profile</a>&emsp;&emsp;
 					<a href="https://github.com/YuYun95/vblog" target="_blank">VBlog</a>
 				</div>

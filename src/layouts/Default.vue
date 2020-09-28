@@ -86,7 +86,7 @@
           <el-col :span="2" style="text-align: center;">
             <img
               v-popover:bigAvatar
-              :src="'http://strapi.jiailing.com'+vblog.avatarUrl.url"
+              :src="'http://zepoch.cn:1337'+vblog.avatarUrl.url"
               style="margin-top: 4px;margin-right: 10px;width:52px; height:52px; border-radius:5px; border: 1px solid #EBEEF5"
             />
             <el-popover
@@ -100,7 +100,7 @@
               <br />
               <i class="el-icon-location"></i>&emsp;{{ vblog.location }}
               <br />
-              <img :src="'http://strapi.jiailing.com'+vblog.avatarUrl.url" style="width: 200px;height: 200px;" />
+              <img :src="'http://zepoch.cn:1337'+vblog.avatarUrl.url" style="width: 200px;height: 200px;" />
             </el-popover>
           </el-col>
         </el-row>
@@ -228,7 +228,7 @@ export default {
                         break
                 }
             },
-            
+
     moveIcon(index) {
       let width = window.innerWidth;
       this.randomIcon[index]["top"] = this.randomInt(20, 300);

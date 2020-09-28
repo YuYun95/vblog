@@ -92,13 +92,12 @@
               padding: 10px 0px 0px 0px;
             "
           >
-            {{ item.node.description }} {{ $page.blogs.pageInfo }}
+            {{ item.node.description }}
           </div>
         </el-card>
 
         <div style="text-align: center">
-          {{ $page.blogs.pageInfo }}
-          <!-- <Pager :info="$page.blogs.pageInfo"/> -->
+           <Pager :info="$page.blogs.pageInfo"/>
           <!-- <el-pagination
             @current-change="list"
             background
@@ -131,6 +130,10 @@
 <page-query>
 query ($page: Int) {
   blogs: allStrapiBlog (perPage: 2, page: $page) @paginate {
+    pageInfo {
+      totalPages
+      currentPage
+    }
     edges{
       node{
         id
